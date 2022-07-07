@@ -30,5 +30,9 @@ rust_library {
         "alloc",
         "std",
     ],
+    apex_available: [
+        "//apex_available:platform",
+        "//apex_available:anyapex",
+    ],
     vendor_available: true,
 }
