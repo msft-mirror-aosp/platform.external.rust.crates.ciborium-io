@@ -1,6 +1,18 @@
 {
   "device": true,
-  "features": "alloc,std,",
   "run": true,
-  "dependencies": true
+  "dependencies": true,
+  "variants": [
+    {
+      "features": "alloc,std"
+    },
+    {
+      "alloc": true,
+      "features": "alloc",
+      "force-rlib": true,
+      "no-host": true,
+      "suffix": "_nostd",
+      "no-std": true
+    }
+  ]
 }
